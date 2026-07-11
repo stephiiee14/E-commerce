@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAH Beauty | High-Performance Clean Skincare</title>
+    <meta name="description" content="Discover AMAH Beauty. Cultivated for skin longevity. Clean, high-performance daily rituals tailored to your skin temperament.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">AMAH Beauty</a>
+            <nav class="nav-links">
+                <a href="#philosophy">Our Ethos</a>
+                <a href="#catalog">Shop Rituals</a>
+                <a href="#quiz">Skin Quiz</a>
+                <a href="#newsletter">The Journal</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cart-toggle" aria-label="Open Shopping Bag">
+                    <svg class="cart-icon-svg" viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 01-8 0"></path>
+                    </svg>
+                    <span class="cart-count" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-tag">Cultivated for skin longevity</span>
+                    <h1>Clean formulas. Elevated results.</h1>
+                    <p class="hero-desc">We combine nutrient-dense botanical extracts with advanced clinical actives to create beautiful, biocompatible formulas that honor your skin's natural intelligence.</p>
+                    <div class="hero-actions">
+                        <a href="#catalog" class="primary-btn">Explore Catalog</a>
+                        <a href="#quiz" class="secondary-btn">Find Your Routine</a>
+                    </div>
+                </div>
+                <div class="hero-image-sec">
+                    <div class="hero-main-img-container">
+                        <!-- Generates beautiful SVG fallback for hero image if not yet loaded -->
+                        <img class="hero-main-img" src="images/hero.jpg" alt="AMAH Beauty Skincare Products" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'500\\' height=\\'600\\' viewBox=\\'0 0 500 600\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23f4efea\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'serif\\' font-size=\\'36\\' fill=\\'%238c7f76\\'>AMAH BEAUTY</text></svg>'">
+                    </div>
+                    <div class="hero-badge-card">
+                        <p>100% Biocompatible</p>
+                        <span>Sustainably Sourced</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Philosophy / Ethos -->
+        <section id="philosophy" class="container" style="padding: 100px 0; border-top: 1px solid var(--border-color);">
+            <div class="section-header">
+                <h2>The AMAH Philosophy</h2>
+                <p>Pure, conscious, and result-oriented skincare rituals.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+                <div class="text-center" style="padding: 20px;">
+                    <h3 style="margin-bottom: 16px; font-size: 22px;">Botanical Integrity</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; font-weight: 300;">We cold-press and wild-harvest our plant extracts to ensure that the vital phytonutrients remain highly active, pure, and ready to nourish your skin barrier.</p>
+                </div>
+                <div class="text-center" style="padding: 20px;">
+                    <h3 style="margin-bottom: 16px; font-size: 22px;">Clinical Precision</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; font-weight: 300;">We utilize science-backed active ingredients (like niacinamide, peptides, and encapsulated retinol) at therapeutic concentrations for visible, long-lasting corrections.</p>
+                </div>
+                <div class="text-center" style="padding: 20px;">
+                    <h3 style="margin-bottom: 16px; font-size: 22px;">Radical Transparency</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; font-weight: 300;">Every ingredient is selected for a specific cellular purpose. We never formulate with fillers, synthetic fragrances, parabens, or drying alcohols.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skin Routine Quiz Section -->
+        <section id="quiz" class="quiz-section">
+            <div class="container">
+                <div class="quiz-card">
+                    <div id="quiz-inner-container">
+                        <div class="quiz-start-view text-center">
+                            <h2>Discover Your Clean Routine</h2>
+                            <p>Answer a few questions about your skin temperament and concerns to reveal a customized daily ritual designed just for you.</p>
+                            <button class="primary-btn" id="start-quiz-btn">Start Skin Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Catalog Section -->
+        <section id="catalog" class="catalog-section container">
+            <div class="section-header">
+                <h2>Our Formulations</h2>
+                <p>Curate your bespoke daily ritual.</p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="filters-wrapper">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cleanser">Cleansers</button>
+                <button class="filter-btn" data-filter="toner">Toners</button>
+                <button class="filter-btn" data-filter="serum">Serums</button>
+                <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+                <button class="filter-btn" data-filter="sunscreen">SPF</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Dynamically populated by app.js -->
+            </div>
+        </section>
+
+        <!-- Newsletter Sign-up -->
+        <section id="newsletter" class="newsletter-section text-center">
+            <div class="container newsletter-content">
+                <h2>The AMAH Journal</h2>
+                <p>Subscribe to receive cellular skincare advice, clean beauty breakthroughs, and exclusive invitations to brand events.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required class="newsletter-input" aria-label="Email address for newsletter">
+                    <button type="submit" class="newsletter-submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>AMAH Beauty</h3>
+                    <p>Creating biocompatible skincare systems to foster skin longevity and natural radiance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#catalog">All Formulations</a></li>
+                        <li><a href="#catalog">New Releases</a></li>
+                        <li><a href="#quiz">Gift Sets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#philosophy">Our Story</a></li>
+                        <li><a href="#philosophy">Sustainability</a></li>
+                        <li><a href="#newsletter">The Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Skin Consultations</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMAH Beauty. All rights reserved.</p>
+                <p>Designed for cellular health.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UI Overlay elements -->
+    <div class="modal-overlay" id="cart-overlay"></div>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="product-modal">
+        <button class="close-modal-btn" id="close-modal" aria-label="Close details">&times;</button>
+        <div id="modal-detail-content">
+            <!-- Dynamically populated by app.js -->
+        </div>
+    </div>
+
+    <!-- Slide-out Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button class="close-cart-btn" id="close-cart" aria-label="Close Shopping Bag">&times;</button>
+        </div>
+        <div class="cart-items-wrapper" id="cart-items">
+            <!-- Dynamically populated by app.js -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cart-subtotal-val">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Thank you for shopping with AMAH Beauty! In a real application, this would redirect you to checkout.')">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container"></div>
+
+    <!-- Core App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
