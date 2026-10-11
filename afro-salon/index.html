@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crown & Coil | Afro Hair Salon</title>
+  <meta name="description" content="Crown & Coil is a specialist afro hair salon: braids, locs, natural hair care, silk presses, colour and protective styles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">Crown <span>&</span> Coil</a>
+  <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#gallery">Styles</a>
+    <a href="#team">Team</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#book" class="btn btn-small">Book now</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Afro &amp; textured hair specialists</p>
+      <h1>Your crown deserves <em>expert care.</em></h1>
+      <p>Braids, locs, silk presses, colour and healthy natural hair care, done by stylists who understand your texture.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn">Book an appointment</a>
+        <a href="#services" class="btn btn-outline">See services</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e9a23b"/><stop offset="1" stop-color="#b3541e"/>
+          </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="92" fill="url(#g)" opacity=".15"/>
+        <g fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round">
+          <path d="M100 150c-30-10-30-30 0-40s30-30 0-40-30-30 0-40"/>
+          <path d="M70 150c-30-10-30-30 0-40s30-30 0-40-30-30 0-40" opacity=".6"/>
+          <path d="M130 150c-30-10-30-30 0-40s30-30 0-40-30-30 0-40" opacity=".6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div>✦ Natural &amp; relaxed hair</div>
+    <div>✦ Gentle, no-pull techniques</div>
+    <div>✦ Premium, hair-safe products</div>
+    <div>✦ Kids welcome</div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our services</h2>
+    <p class="sub">Everything your hair needs under one roof.</p>
+    <div class="cards">
+      <article class="card"><span class="ico">🪢</span><h3>Braids &amp; Twists</h3><p>Box braids, knotless, cornrows, Senegalese and passion twists in any length.</p></article>
+      <article class="card"><span class="ico">🌀</span><h3>Locs</h3><p>Starter locs, retwists, interlocking, loc styling and maintenance.</p></article>
+      <article class="card"><span class="ico">💧</span><h3>Natural Hair Care</h3><p>Deep conditioning, wash &amp; go, twist-outs, trims and moisture treatments.</p></article>
+      <article class="card"><span class="ico">✨</span><h3>Silk Press &amp; Relaxers</h3><p>Smooth, bouncy, heat-protected finishes and gentle relaxer touch-ups.</p></article>
+      <article class="card"><span class="ico">🎨</span><h3>Colour</h3><p>Honey blondes, copper, burgundy and bold fashion shades with bond protection.</p></article>
+      <article class="card"><span class="ico">👑</span><h3>Wigs &amp; Weaves</h3><p>Sew-ins, closures, frontal installs, custom wig making and styling.</p></article>
+    </div>
+  </section>
+
+  <section id="prices" class="section alt">
+    <h2>Price list</h2>
+    <p class="sub">Prices are a guide and depend on length, density and hair condition.</p>
+    <div class="prices">
+      <div class="price-col">
+        <h3>Braids &amp; Locs</h3>
+        <ul>
+          <li><span>Cornrows</span><b>from £40</b></li>
+          <li><span>Knotless braids (medium)</span><b>from £130</b></li>
+          <li><span>Passion twists</span><b>from £120</b></li>
+          <li><span>Loc retwist</span><b>from £55</b></li>
+        </ul>
+      </div>
+      <div class="price-col">
+        <h3>Treatments &amp; Styling</h3>
+        <ul>
+          <li><span>Wash &amp; deep condition</span><b>from £45</b></li>
+          <li><span>Silk press</span><b>from £70</b></li>
+          <li><span>Twist-out / braid-out</span><b>from £55</b></li>
+          <li><span>Trim &amp; shape</span><b>from £25</b></li>
+        </ul>
+      </div>
+      <div class="price-col">
+        <h3>Colour &amp; Extensions</h3>
+        <ul>
+          <li><span>Full colour</span><b>from £85</b></li>
+          <li><span>Highlights</span><b>from £110</b></li>
+          <li><span>Sew-in weave</span><b>from £100</b></li>
+          <li><span>Frontal wig install</span><b>from £90</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Style inspiration</h2>
+    <p class="sub">A taste of what we create. Add your own photos in the <code>images</code> folder.</p>
+    <div class="gallery">
+      <div class="tile t1"><span>Knotless Braids</span></div>
+      <div class="tile t2"><span>Silk Press</span></div>
+      <div class="tile t3"><span>Starter Locs</span></div>
+      <div class="tile t4"><span>Twist-Out</span></div>
+      <div class="tile t5"><span>Copper Colour</span></div>
+      <div class="tile t6"><span>Cornrow Art</span></div>
+    </div>
+  </section>
+
+  <section id="team" class="section alt">
+    <h2>Meet the team</h2>
+    <div class="cards team">
+      <article class="card"><div class="avatar">A</div><h3>Amara</h3><p>Founder &amp; braid specialist · 12 yrs</p></article>
+      <article class="card"><div class="avatar">T</div><h3>Tosin</h3><p>Loc &amp; natural hair expert · 8 yrs</p></article>
+      <article class="card"><div class="avatar">N</div><h3>Naomi</h3><p>Colour &amp; silk press stylist · 6 yrs</p></article>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2>Happy clients</h2>
+    <div class="cards">
+      <blockquote class="card">“Finally a salon that gets my curls. My hair has never felt this healthy.”<cite>Chidi, natural hair client</cite></blockquote>
+      <blockquote class="card">“Knotless braids that didn't hurt, and they lasted 8 weeks. Booking again!”<cite>Janelle, braids client</cite></blockquote>
+      <blockquote class="card">“Amazing atmosphere, great music, and the best silk press in town.”<cite>Esi, silk press client</cite></blockquote>
+    </div>
+  </section>
+
+  <section id="book" class="section book">
+    <div class="book-info">
+      <h2>Book your appointment</h2>
+      <p>Tell us what you'd like and we'll confirm your slot by phone or email within 24 hours.</p>
+      <ul class="info">
+        <li>📍 12 Brixton Road, London SW9</li>
+        <li>📞 020 7946 0123</li>
+        <li>✉️ hello@crownandcoil.example</li>
+        <li>🕘 Tue–Sat 9am–7pm · Sun 10am–5pm · Mon closed</li>
+      </ul>
+    </div>
+    <form id="bookForm" novalidate>
+      <label>Full name<input name="name" required autocomplete="name"></label>
+      <label>Phone or email<input name="contact" required autocomplete="email"></label>
+      <label>Service
+        <select name="service" required>
+          <option value="">Choose a service</option>
+          <option>Braids &amp; Twists</option><option>Locs</option>
+          <option>Natural Hair Care</option><option>Silk Press &amp; Relaxers</option>
+          <option>Colour</option><option>Wigs &amp; Weaves</option>
+        </select>
+      </label>
+      <label>Preferred date<input type="date" name="date" required></label>
+      <label>Notes (optional)<textarea name="notes" rows="3"></textarea></label>
+      <button class="btn" type="submit">Request booking</button>
+      <p id="formMsg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p class="logo">Crown <span>&</span> Coil</p>
+  <p>© <span id="year"></span> Crown &amp; Coil Afro Hair Salon · Celebrating every texture.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
